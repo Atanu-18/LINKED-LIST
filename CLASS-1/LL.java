@@ -9,7 +9,21 @@ public class LL {
             this.next = null;
         }
     }
+
+    public static Node head;
+    public static Node tail;
+
+    //method
+    // add();
+    // remove();
+    // print();
+    // search();
+
+
     public static void main(String[] args) {
-        
+        LL ll = new LL();
+
+        ll.head = new Node(1);
+        // ll.head.next = new Node(2);
     }
 }
