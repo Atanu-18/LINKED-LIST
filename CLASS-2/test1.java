@@ -35,9 +35,24 @@ public class test1 {
     }
 
 
+    // add last 
+    public void addLast(int data) {
+        Node newNode = new Node(data);
+        if(head == null) {
+            head = tail = newNode;
+            return;
+        }
+        tail.next = newNode;
+        tail = newNode;
+    }
+
+
     public static void main(String[] args) {
         test1 t1 = new test1();
         t1.addFirst(1);
         t1.addFirst(2);
+
+        t1.addLast(3);
+        t1.addLast(4);
     }
 }
